@@ -51,7 +51,7 @@
   ],
   "start_url": "https://aamitsengar.github.io/chai",
   "display": "standalone",
-  "scope": "/",
+  "scope": "/chai",
   "background_color": "#fff",
   "theme_color": "#ECC400",
   "orientation": "portrait",
