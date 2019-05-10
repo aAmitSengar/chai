@@ -1,2 +1,0 @@
-# chai
-for progressive app
