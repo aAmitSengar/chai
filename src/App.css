@@ -31,3 +31,124 @@
     transform: rotate(360deg);
   }
 }
+@keyframes bounceInUp {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  from {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0);
+  }
+  75% {
+    transform: translate3d(0, 10px, 0);
+  }
+  90% {
+    transform: translate3d(0, -5px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInUp {
+  animation-name: bounceInUp;
+}
+
+.btn {
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 14px;
+  outline: 0;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: .5px;
+  cursor: pointer;
+}
+
+.btn-premium {
+  color: #ECC400;
+  background-color: #fff;
+}
+
+.ad2hs-prompt {
+  background-color: rgb(59, 134, 196); /* Blue */
+  border: none;
+  display: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  position: absolute;
+  margin: 0 1rem 1rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: calc(100% - 32px);
+}
+
+.ios-prompt {
+  background-color: #fcfcfc;
+  border: 1px solid #666;
+  display: none;
+  padding: 0.8rem 1rem 0 0.5rem;
+  text-decoration: none;
+  font-size: 16px;
+  color: #555;
+  position: absolute;
+  margin: 0 auto 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0;
+}
+
+.ad2hs-prompt:hover {
+  box-shadow: 0 0 0 0 0.25rem;
+}
+
+.ad2hs-prompt a:focus {
+  text-decoration: underline;
+}
+
+.ad2hs-prompt:focus-within {
+  box-shadow: 0 0 0 0.25rem;
+}
+
+.ad2hs-prompt:focus-within a:focus {
+  text-decoration: none;
+}
+
+.ad2hs-prompt H1 {
+  font-size: 2em;
+  text-align: center;
+  width: 100%;
+}
+
+.ad2hs-prompt .btn {
+  align-self: flex-end;
+  margin-right: 5%;
+}
+
+.ad2hs-prompt > * + * {
+  margin-top: 0.75rem;
+}
+
+.ad2hs-prompt :last-child {
+  margin-top: auto;
+  margin-bottom: 0.75rem;
+}

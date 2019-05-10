@@ -1,17 +1,25 @@
 {
   "name": "chai",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "http://aamitsengar.github.io/chai",
   "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "browser-details": "^0.3.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1"
   },
   "scripts": {
+    "starts": "HTTPS=true react-scripts start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +35,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "ngrok": "^3.1.1"
   }
 }
