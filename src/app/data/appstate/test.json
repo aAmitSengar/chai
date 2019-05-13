@@ -1,0 +1,188 @@
+[{
+        "Name": "KPI",
+        "key": "KPI",
+        "isActive": false,
+        "privileges": [{
+            "name": "View KPI",
+            "key": "VIEW",
+            "isActive": false
+        }, {
+            "name": "Notify KPI",
+            "key": "NOTIFY",
+            "isActive": false
+        }, {
+            "name": "Acknowledge KPI",
+            "key": "ACK",
+            "isActive": false
+        }, {
+            "name": "Export KPI Data",
+            "key": "EXPORT",
+            "isActive": false
+        }, {
+            "name": "Build KPI",
+            "key": "BUILD",
+            "isActive": false
+        }, {
+            "name": "Edit KPI",
+            "key": "EDIT",
+            "isActive": false
+        }, {
+            "name": "Delete KPI",
+            "key": "DELETE",
+            "isActive": false
+        }]
+    },
+    {
+        "Name": "Alerts",
+        "key": "ALERTS",
+        "isActive": false,
+        "privileges": [{
+            "name": "View Alerts",
+            "key": "VIEW",
+            "isActive": false
+        }, {
+            "name": "Notify Alerts",
+            "key": "NOTIFY",
+            "isActive": false
+        }, {
+            "name": "Acknowledge Alerts",
+            "key": "ACK",
+            "isActive": false
+        }, {
+            "name": "Export Alerts Data",
+            "key": "EXPORT",
+            "isActive": false
+        }]
+    },
+    {
+        "Name": "HeatMap",
+        "key": "HEATMAP",
+        "isActive": false,
+        "privileges": [{
+            "name": "View Network Topology HeatMap",
+            "key": "VIEW_NETWORK_TOPOLOGY",
+            "isActive": false
+        }, {
+            "name": "View Service Topology HeatMap",
+            "key": "VIEW_SERVICE_TOPOLOGY",
+            "isActive": false
+        }]
+    },
+    {
+        "Name": "Dashboard",
+        "key": "DASHBOARD",
+        "isActive": false,
+        "privileges": [{
+            "name": "View Dashboard",
+            "key": "VIEW",
+            "isActive": false
+        }]
+    },
+    {
+        "Name": "Users",
+        "key": "USERS",
+        "isActive": false,
+        "privileges": [{
+                "name": "Add User",
+                "key": "ADD",
+                "isActive": false
+            },
+            {
+                "name": "Edit User",
+                "key": "EDIT",
+                "isActive": false
+            },
+            {
+                "name": "View User",
+                "key": "VIEW",
+                "isActive": false
+            },
+            {
+                "name": "Delete User",
+                "key": "DELETE",
+                "isActive": false
+            }
+        ]
+    },
+    {
+        "Name": "Roles",
+        "key": "ROLES",
+        "isActive": false,
+        "privileges": [{
+                "name": "Add Role",
+                "key": "ADD",
+                "isActive": false
+            },
+            {
+                "name": "Delete Role",
+                "key": "DELETE",
+                "isActive": false
+            },
+            {
+                "name": "Edit Role",
+                "key": "EDIT",
+                "isActive": false
+            },
+            {
+                "name": "View Role",
+                "key": "VIEW",
+                "isActive": false
+            }
+        ]
+    },
+    {
+        "Name": "Configure",
+        "key": "CONFIGURE",
+        "isActive": false,
+        "privileges": [{
+                "name": "Download Agent",
+                "key": "DOWNLOAD",
+                "isActive": false
+            },
+            {
+                "name": "Connect Agent",
+                "key": "CONNECT",
+                "isActive": false
+            },
+            {
+                "name": "Disconnect Agent",
+                "key": "DISCONNECT",
+                "isActive": false
+            },
+            {
+                "name": "View Server details",
+                "key": "VIEW_SERVER_DETAILS",
+                "isActive": false
+            }, {
+                "name": "Edit Server details",
+                "key": "EDIT_SERVER_DETAILS",
+                "isActive": false
+            },
+            {
+                "name": "Add CDR Details",
+                "key": "ADD_CDR",
+                "isActive": false
+            },
+            {
+                "name": "Add MIB Details",
+                "key": "ADD_MIB",
+                "isActive": false
+            },
+            {
+                "name": "View CDR",
+                "key": "VIEW_CDR",
+                "isActive": false
+            },
+            {
+                "name": "Edit CDR",
+                "key": "EDIT_CDR",
+                "isActive": false
+            },
+            {
+                "name": "Delete CDR",
+                "key": "DELETE_CDR",
+                "isActive": false
+            }
+        ]
+    }
+]

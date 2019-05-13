@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url('hinted-Barlow-Thin.eot');
+    src: local('Barlow Thin'), local('Barlow-Thin'),
+        url('hinted-Barlow-Thin.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Barlow-Thin.woff2') format('woff2'),
+        url('hinted-Barlow-Thin.woff') format('woff'),
+        url('hinted-Barlow-Thin.ttf') format('truetype'),
+        url('hinted-Barlow-Thin.svg#Barlow-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('hinted-Barlow-Regular.eot');
+    src: local('Barlow Regular'), local('Barlow-Regular'),
+        url('hinted-Barlow-Regular.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Barlow-Regular.woff2') format('woff2'),
+        url('hinted-Barlow-Regular.woff') format('woff'),
+        url('hinted-Barlow-Regular.ttf') format('truetype'),
+        url('hinted-Barlow-Regular.svg#Barlow-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('hinted-Barlow-Light.eot');
+    src: local('Barlow Light'), local('Barlow-Light'),
+        url('hinted-Barlow-Light.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Barlow-Light.woff2') format('woff2'),
+        url('hinted-Barlow-Light.woff') format('woff'),
+        url('hinted-Barlow-Light.ttf') format('truetype'),
+        url('hinted-Barlow-Light.svg#Barlow-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('hinted-Barlow-SemiBold.eot');
+    src: local('Barlow SemiBold'), local('Barlow-SemiBold'),
+        url('hinted-Barlow-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Barlow-SemiBold.woff2') format('woff2'),
+        url('hinted-Barlow-SemiBold.woff') format('woff'),
+        url('hinted-Barlow-SemiBold.ttf') format('truetype'),
+        url('hinted-Barlow-SemiBold.svg#Barlow-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('hinted-Barlow-Medium.eot');
+    src: local('Barlow Medium'), local('Barlow-Medium'),
+        url('hinted-Barlow-Medium.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Barlow-Medium.woff2') format('woff2'),
+        url('hinted-Barlow-Medium.woff') format('woff'),
+        url('hinted-Barlow-Medium.ttf') format('truetype'),
+        url('hinted-Barlow-Medium.svg#Barlow-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('hinted-Barlow-Bold.eot');
+    src: local('Barlow Bold'), local('Barlow-Bold'),
+        url('hinted-Barlow-Bold.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Barlow-Bold.woff2') format('woff2'),
+        url('hinted-Barlow-Bold.woff') format('woff'),
+        url('hinted-Barlow-Bold.ttf') format('truetype'),
+        url('hinted-Barlow-Bold.svg#Barlow-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+

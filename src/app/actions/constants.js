@@ -1,0 +1,10 @@
+const constants = {
+    APISTATUS: 'APISTATUS',
+    LOGIN: 'LOGIN',
+    LOGOUT: 'LOGOUT',
+    FORGOT_PASSWORD: 'FORGOT_PASSWORD',
+    TOGGLE_NAV_DRAWER: 'TOGGLE_NAV_DRAWER',
+    DASHBORD_COUNTERS: 'DASHBORD_COUNTERS'
+}
+
+export default constants

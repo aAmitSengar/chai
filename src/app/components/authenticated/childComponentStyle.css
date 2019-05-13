@@ -1,0 +1,44 @@
+.header_cnt {
+    font-family:'Barlow';
+    font-weight:500;
+    font-size:30px;
+    /* border-bottom:1px solid gray; */
+    box-shadow: 2px 0px 14.88px 1.12px rgba(111, 114, 116, 0.38);
+    background-color: #FFFFFF !important;
+    height:'auto';
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:20px;
+    padding-bottom: 10px;
+    outline: none !important;
+}
+.pageTitle {
+    margin-top:20px;
+    margin-left:20px;
+}
+
+.tab-links {
+    margin-top:20px;
+    margin-left:20px;
+    font-family:'Barlow';
+    font-weight:500;
+    font-size:25px;
+}
+.tab-link-active  {
+    color:blue;
+    border-bottom:3px solid blue;
+}
+.header-label {
+    margin-top:20px;
+    margin-left:20px;
+    font-family:'Barlow';
+    font-weight:500;
+    font-size:25px;
+}
+.form-control:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    background-color: #f9f9fb;
+    border-color: #f9f9fb; 
+}
