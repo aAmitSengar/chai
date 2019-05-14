@@ -3,6 +3,7 @@ import { withStyles } from '@material-ui/core/styles';
 import '../../../styles/main.css';
 import logo from '../../../images/logo.png';
 import variables from '../../styles/variables';
+import config from '../../configs/configs'
 
 
 const styles = {
@@ -25,7 +26,7 @@ class DashboardFooter extends Component {
         return (
             <div className={classes.fooDiv}>                
                 <p>&copy;&nbsp;{new Date().getFullYear()}&nbsp;&nbsp;<img src={logo} alt=""/>
-                <span>&nbsp;All rights reserved &#124; Powered by TeleDNA Communications Private Limited. </span>                
+                <span>&nbsp;All rights reserved &#124; Powered by {config.POWERED_BY} </span>                
                 </p>
             </div>
         )

@@ -255,7 +255,6 @@ class Login extends Component {
 	};
 
 	render() {
-        debugger;
 		// if (this.props.user.email && this.props.user.token) {
 		if (this.state.demo === true) {
 			return <Redirect to="/home" />;

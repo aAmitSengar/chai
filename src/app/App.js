@@ -89,15 +89,6 @@ class App extends Component {
 				<Layout />
 				<AddToDesktop>Install As Application</AddToDesktop>
 			</MuiThemeProvider>
-			// <div className="App">
-			// 	<header className="App-header">
-			// 		<img src={logo} className="App-logo" alt="logo" />
-			// 		<p>welcome</p>
-			// 		<Conditional				>
-			// 			Install As Application
-			// 		</Conditional>
-			// 	</header>
-			// </div>
 		);
 	}
 }
