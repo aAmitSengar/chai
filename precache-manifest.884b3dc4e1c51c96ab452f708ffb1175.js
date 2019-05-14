@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "77d97fce318e6b618fd065f4eead7450",
+    "revision": "9eba59a4675f6b94a21f5d9c4806f29a",
     "url": "/chai/index.html"
   },
   {
-    "revision": "22cd17552ff44097198f",
+    "revision": "3d261516e80c5721fa67",
     "url": "/chai/static/css/2.266e55a5.chunk.css"
   },
   {
-    "revision": "13cfdd8fd31e5265b056",
+    "revision": "0b923feea9fce144ef23",
     "url": "/chai/static/css/main.20dd4e87.chunk.css"
   },
   {
-    "revision": "22cd17552ff44097198f",
-    "url": "/chai/static/js/2.0e6ec65a.chunk.js"
+    "revision": "3d261516e80c5721fa67",
+    "url": "/chai/static/js/2.475aeba7.chunk.js"
   },
   {
-    "revision": "13cfdd8fd31e5265b056",
-    "url": "/chai/static/js/main.e86fa533.chunk.js"
+    "revision": "0b923feea9fce144ef23",
+    "url": "/chai/static/js/main.6804b184.chunk.js"
   },
   {
     "revision": "14627f3bc525b61b5c39",
@@ -50,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "57ae073aaa9f9ab9c2ed0957c639e2b3",
     "url": "/chai/static/media/export-data.57ae073a.svg"
+  },
+  {
+    "revision": "96c3a928b77a999fc6aae1a691347504",
+    "url": "/chai/static/media/export-variant.96c3a928.svg"
   },
   {
     "revision": "09820a014db6ff05f7575c43bd8452a8",
