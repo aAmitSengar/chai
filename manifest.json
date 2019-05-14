@@ -47,6 +47,11 @@
       "src": "meta/chai-logo-600x310.png",
       "sizes": "600x310",
       "type": "image/png"
+    },
+    {
+      "src": "meta/chai-logo-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "prefer_related_applications": false,
