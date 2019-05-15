@@ -242,7 +242,7 @@ class NavBar extends Component {
         return (
             <AppBar position="fixed" className={classes.appBar} elevation={1}  >
                 <Toolbar>
-                    <Typography variant="title" color="inherit" className={classes.flex}>
+                    <Typography  color="inherit" className={classes.flex}>
                         <Link to={`/home`} className={classes.logo}>
                             <img src={logo} alt="COGNIZ" />
                         </Link>

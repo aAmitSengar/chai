@@ -14,7 +14,12 @@ const styles = theme => ({
         padding: '30px 0px 18px 23px',
         margin: 0,
     },
-
+    appBar: {
+        position: "relative"
+    },
+    flex: {
+        flex: 1
+    }
 });
 
 export default styles;

@@ -7,14 +7,14 @@ import NavBar from '../components/common/NavBar';
 // import DashboardFooter from '../components/common/dashboardFooter';
 import variables from '../styles/variables';
 
-const styles = (theme: { spacing: { unit: number; }; }) => ({
+const styles = (theme) => ({
     root: {
         flexGrow: 1,
         //minHeight: '100vh',
         zIndex: 1,
         position: 'relative',
         display: 'flex',
-        paddingLeft: 100,
+        // paddingLeft: 100,
         height: '100vh',
         width: '100vw',
         flexDirection: 'column',
@@ -51,7 +51,7 @@ class Layout extends Component {
             return (
                 <div className={classes.root}>
                     <NavBar key={0} />,
-                    <NavDrawer key={1} />
+                    {/* <NavDrawer key={1} /> */}
                     <div className={classes.mainContent}>
                         <AppRouter />
                     </div>

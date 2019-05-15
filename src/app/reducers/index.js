@@ -22,19 +22,22 @@ import resetPassword from './umc/resetPassword';
 import resetPwdCheck from './umc/resetPwdCheck';
 import changePassword from './umc/changePassword';
 
+import listProducts from './product/listProducts'
+
+
 
 export default {
     login: login,
-   
+
     apistatus: apistatus,
     navdrawer: navdrawer,
-    
+
     forgotPasswordRes: forgotpassword,
     usersList: usersList,
 
-    
+
     rolesList: rolesList,
-   
+
     createUser: createUser,
     privilegesList: privilegesList,
     createRole: createRole,
@@ -42,10 +45,12 @@ export default {
     deleteRole: deleteRole,
     deleteUser: deleteUser,
     updateUser: updateUser,
-   
+
     resetPassword: resetPassword,
-    
+
     resetPwdCheck: resetPwdCheck,
     changePassword: changePassword,
-   
+
+    productList: listProducts
+
 };

@@ -8,7 +8,6 @@
   "navdrawer": {
     "visible": false
   },
-
   "usersList": [
     {
       "id": "1",
@@ -71,9 +70,6 @@
       "Privilages": []
     }
   ],
- 
-
-
   "rolesList": [
     {
       "name": "SuperSuperUser",
@@ -81,7 +77,6 @@
       "permissions": []
     }
   ],
-
   "privilegesList": [
     {
       "Name": "KPI",
@@ -487,6 +482,52 @@
   "updateUser": {},
   "forgotPasswordRes": {},
   "resetPwdCheck": {},
-  "changePassword": {}
- 
+  "changePassword": {},
+  "productList": [
+    {
+      "uniqueId":"1",
+      "imgs": ["https://s3.ap-south-1.amazonaws.com/mumbai.urbanpiper.com/media/bizmedia/2018/05/02/PohaGinger-Chai_400_by_400_RESIZED.jpg","https://s3.ap-south-1.amazonaws.com/mumbai.urbanpiper.com/media/bizmedia/l/2019/04/30/IPL_combos_sticker-04_COMPRESSED.jpg"],
+      "title": "Poha & Ginger Chai",
+      "price": 149,
+      "description": "A classic breakfast favorite that goes great with a hot cup of Chai!",
+      "likes": 0,
+      "availableQty": 10
+    },
+    {
+      "uniqueId":"2",
+       "imgs": ["https://s3.ap-south-1.amazonaws.com/mumbai.urbanpiper.com/media/bizmedia/2018/05/02/PohaGinger-Chai_400_by_400_RESIZED.jpg"],
+      "title": "Poha & Ginger Chai",
+      "price": 149,
+      "description": "A classic breakfast favorite that goes great with a hot cup of Chai!",
+      "likes": 0,
+      "availableQty": 10
+    },
+    {
+      "uniqueId":"3",
+       "imgs": ["https://s3.ap-south-1.amazonaws.com/mumbai.urbanpiper.com/media/bizmedia/2018/05/02/PohaGinger-Chai_400_by_400_RESIZED.jpg"],
+      "title": "Poha & Ginger Chai",
+      "price": 149,
+      "description": "A classic breakfast favorite that goes great with a hot cup of Chai!",
+      "likes": 0,
+      "availableQty": 10
+    },
+    {
+      "uniqueId":"4",
+       "imgs": ["https://s3.ap-south-1.amazonaws.com/mumbai.urbanpiper.com/media/bizmedia/2018/05/02/PohaGinger-Chai_400_by_400_RESIZED.jpg"],
+      "title": "Poha & Ginger Chai",
+      "price": 149,
+      "description": "A classic breakfast favorite that goes great with a hot cup of Chai!",
+      "likes": 0,
+      "availableQty": 10
+    },
+    {
+      "uniqueId":"5",
+       "imgs": ["https://s3.ap-south-1.amazonaws.com/mumbai.urbanpiper.com/media/bizmedia/2018/05/02/PohaGinger-Chai_400_by_400_RESIZED.jpg"],
+      "title": "Poha & Ginger Chai",
+      "price": 149,
+      "description": "A classic breakfast favorite that goes great with a hot cup of Chai!",
+      "likes": 0,
+      "availableQty": 10
+    }
+  ]
 }
