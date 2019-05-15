@@ -97,19 +97,21 @@ class Home extends Component {
                         <Grid item xs={12} sm container>
                             <Grid item xs container direction="column" spacing={16}>
                                 <Grid item xs>
-                                    <Typography gutterBottom variant="subtitle1">
+                                    <Typography color="secondary" gutterBottom variant="subtitle1">
                                         {product.title}
                                     </Typography>
-                                    <Typography gutterBottom>{product.description}</Typography>
-                                    <Typography color="textSecondary">{product.description}</Typography>
+                                    <Typography color="secondary">₹ {product.price}</Typography>
+                                    <Typography gutterBottom color="secondary"> {product.description}</Typography>
+                                    <Typography color="secondary">{product.description}</Typography>
+                                    
                                 </Grid>
-                                <Grid item>
-                                    <Typography style={{ cursor: 'pointer' }}>Remove</Typography>
-                                </Grid>
+                                {/* <Grid item>
+                                    <Typography style={{ cursor: 'pointer' }} color="secondary">Remove</Typography>
+                                </Grid> */}
                             </Grid>
-                            <Grid item>
-                                <Typography variant="subtitle1">{product.price}</Typography>
-                            </Grid>
+                            {/* <Grid item>
+                                <Typography variant="subtitle1" color="primary">{product.price}</Typography>
+                            </Grid> */}
                         </Grid>
                     </Grid>
                 </Paper>
