@@ -136,6 +136,30 @@ class NavDrawer extends Component {
                         </ListItem>
                     </Link>
                     }
+                    {(hasRoutePermission("USERS"))  &&
+                    <Link to="/centers" className={classes.kpiBox} >
+                        <ListItem className={[classes.listItem, this.isActive('/centers') ? classes.activeLink : ''].join(" ")} >
+                            <SVG
+                                src={Users}
+                                className={this.isActive('/centers') ? classes.activeIcon : classes.menuIcons}
+                            >
+                            </SVG>
+                            <ListItemText className={[classes.itemLbl, 'label'].join(' ')} secondary="Centers" />
+                        </ListItem>
+                    </Link>
+                    }
+                    {(hasRoutePermission("USERS"))  &&
+                    <Link to="/parents" className={classes.kpiBox} >
+                        <ListItem className={[classes.listItem, this.isActive('/parents') ? classes.activeLink : ''].join(" ")} >
+                            <SVG
+                                src={Users}
+                                className={this.isActive('/parents') ? classes.activeIcon : classes.menuIcons}
+                            >
+                            </SVG>
+                            <ListItemText className={[classes.itemLbl, 'label'].join(' ')} secondary="Parents" />
+                        </ListItem>
+                    </Link>
+                    }
                    
                 </List>
 

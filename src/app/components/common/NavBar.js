@@ -1,8 +1,14 @@
-import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+import React, {
+    Component
+} from 'react';
+import {
+    withRouter
+} from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import { withStyles } from '@material-ui/core/styles';
+import {
+    withStyles
+} from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 
 import Button from '@material-ui/core/Button';
@@ -13,9 +19,15 @@ import FontAwesomeIcon from "react-fontawesome";
 import APITransport from '../../actions/apitransport/apitransport';
 
 import MenuItem from '@material-ui/core/MenuItem';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import {
+    Link
+} from 'react-router-dom';
+import {
+    connect
+} from 'react-redux';
+import {
+    bindActionCreators
+} from 'redux';
 // import TimeFilter from '../authenticated/Filters/TimeFilter';
 
 import '../../../styles/main.css';
@@ -28,6 +40,7 @@ import variables from '../../styles/variables';
 import Popovers from '../common/Popovers/PopoverNew';
 import ManageAccount from './ManageAccount/ManageAccount';
 import ConfirmationBox from './ConfirmationBox/ConfirmationBox';
+import configs from '../../configs/configs';
 
 const styles = theme => ({
     root: {
@@ -52,34 +65,8 @@ const styles = theme => ({
         marginRight: 15,
         cursor: 'pointer'
     },
-
-    locationFilter: {
-        padding: theme.spacing.unit,
-        margin: `${theme.spacing.unit}px 0`,
-        borderRadius: 3,
-        marginRight: 15,
-        overflow: "hidden",
-        textOverflow: "ellipsis",
-        width: 152,
-        whiteSpace: "nowrap",
-        outline: 'none',
-        border: '1px solid',
-        borderColor: theme.palette.text.primary,
-        '&:focus': {
-            outline: 'none',
-        },
-
-    },
-    timeIndicate: {
-        marginRight: 15,
-        display: "inherit",
-        outline: 'none',
-        '&:focus': {
-            outline: 'none',
-        }
-    },
-    clockIcon: {
-        marginRight: 10
+    logo: {
+        minHeight: 100
     },
     active: {
         border: '1px solid',
@@ -144,12 +131,16 @@ class NavBar extends Component {
     }
 
     cancelPLV() {
-        this.setState({ popoverOpen: false });
+        this.setState({
+            popoverOpen: false
+        });
     }
 
     profileMenu = event => {
         this.cancelPLV();
-        this.setState({ popoverOpen: true, });
+        this.setState({
+            popoverOpen: true,
+        });
     }
 
     manageAccount() {
@@ -159,16 +150,48 @@ class NavBar extends Component {
     }
 
     getProfilePanel() {
-        const { classes } = this.props;
-        return [
-            <MenuItem key={1} className={classes.menuItem} onClick={this.manageAccount.bind(this)}>
-                <FontAwesomeIcon name={"manage-user"} className={"fas fa-user"} />
-                &nbsp;Manage Account
-            </MenuItem>,
-            <MenuItem key={2} className={classes.menuItem} onClick={(event) => this.logout(event)}>
-                <FontAwesomeIcon name={"logout"} className={"fas fa-power-off"} />
-                &nbsp;Logout
-            </MenuItem>
+        const {
+            classes
+        } = this.props;
+        return [ <
+            MenuItem key = {
+                1
+            }
+            className = {
+                classes.menuItem
+            }
+            onClick = {
+                this.manageAccount.bind(this)
+            } >
+            <
+            FontAwesomeIcon name = {
+                "manage-user"
+            }
+            className = {
+                "fas fa-user"
+            }
+            /> &
+            nbsp;Manage Account <
+            /MenuItem>, <
+            MenuItem key = {
+                2
+            }
+            className = {
+                classes.menuItem
+            }
+            onClick = {
+                (event) => this.logout(event)
+            } >
+            <
+            FontAwesomeIcon name = {
+                "logout"
+            }
+            className = {
+                "fas fa-power-off"
+            }
+            /> &
+            nbsp;Logout <
+            /MenuItem>
 
         ]
     }
@@ -192,7 +215,9 @@ class NavBar extends Component {
     }
 
     selectPLV(plvs) {
-        this.setState({ plvSelection: plvs });
+        this.setState({
+            plvSelection: plvs
+        });
     }
 
     selectedPLS() {
@@ -236,64 +261,137 @@ class NavBar extends Component {
 
 
     render() {
-        const { classes } = this.props;
+        const {
+            classes
+        } = this.props;
         let isHome = this.props.location.pathname === '/home';
 
-        return (
-            <AppBar position="fixed" className={classes.appBar} elevation={1}  >
-                <Toolbar>
-                    <Typography  color="inherit" className={classes.flex}>
-                        <Link to={`/home`} className={classes.logo}>
-                            <img src={logo} alt="COGNIZ" />
-                        </Link>
-                    </Typography>
+        return ( <
+            AppBar position = "fixed"
+            className = {
+                classes.appBar
+            }
+            elevation = {
+                1
+            } >
+            <
+            Toolbar >
+            <
+            Typography color = "inherit"
+            className = {
+                classes.flex
+            } >
+            <
+            Link to = {
+                `/home`
+            }
+            className = {
+                classes.logo
+            } >
+            <
+            img src = {
+                logo
+            }
+            alt = {
+                configs.APP_AAME
+            }
+            /> <
+            /Link> <
+            /Typography>
 
-                    {/* {isHome ? '' : <MiniDashboard />} */}
+            {
+                /* {isHome ? '' : <MiniDashboard />} */ }
 
-                    {/* {isHome ?
-                        <div>
-                            <Button id="locationModal" className={[classes.locationFilter,].join(' ')} onClick={(event) => this.openPopOver('Select Nodes', 'LOCATION_FILTER', event)}  >
-                                Nodes ({this.selectedPLS()})
-                            </Button>
-                            <Button id="timefilter" className={[classes.locationFilter,].join(' ')} onClick={(event) => this.openPopOver('Select Time', 'TIME_FILTER', event)} >
-                                Time
-                            </Button>
-                        </div> : <div />
-                    } */}
+            {
+                /* {isHome ?
+                                        <div>
+                                            <Button id="locationModal" className={[classes.locationFilter,].join(' ')} onClick={(event) => this.openPopOver('Select Nodes', 'LOCATION_FILTER', event)}  >
+                                                Nodes ({this.selectedPLS()})
+                                            </Button>
+                                            <Button id="timefilter" className={[classes.locationFilter,].join(' ')} onClick={(event) => this.openPopOver('Select Time', 'TIME_FILTER', event)} >
+                                                Time
+                                            </Button>
+                                        </div> : <div />
+                                    } */
+            }
 
-                    <Avatar id="profile_menu" alt="COGNIZ_USER" className={classes.profileImg} src={default_profile} onClick={(event) => this.openPopOver('', 'PROFILE_MENU', event)} />
+            <
+            Avatar id = "profile_menu"
+            alt = "COGNIZ_USER"
+            className = {
+                classes.profileImg
+            }
+            src = {
+                default_profile
+            }
+            onClick = {
+                (event) => this.openPopOver('', 'PROFILE_MENU', event)
+            }
+            />
 
-                    <Popovers target={this.state.anchorEl} handleClose={this.cancelPLV}>
-                        {this.props.title
-                            ?
-                            <label className={classes.popoverHeading}>{this.props.title}</label>
-                            : null}
-                        {this.state.type === 'PROFILE_MENU' &&
-                            this.getProfilePanel()
-                        }
-                        {/* {this.state.type === 'LOCATION_FILTER' &&
-                            // <DashboardPLVFilter selectPLV={this.selectPLV} plvSelect={this.state.plvSelection} actionFilter={"DASHBOARD_FILTER"} cancelPLV={this.cancelPLV} />
-                        } */}
-                        {/* {this.state.type === 'TIME_FILTER' &&
-                            // <TimeFilter cancelPLV={this.cancelPLV} />
-                        } */}
+            <
+            Popovers target = {
+                this.state.anchorEl
+            }
+            handleClose = {
+                this.cancelPLV
+            } > {
+                this.props.title ?
+                <
+                label className = {
+                    classes.popoverHeading
+                } > {
+                    this.props.title
+                } < /label> :
+                    null
+            } {
+                this.state.type === 'PROFILE_MENU' &&
+                    this.getProfilePanel()
+            } {
+                /* {this.state.type === 'LOCATION_FILTER' &&
+                                            // <DashboardPLVFilter selectPLV={this.selectPLV} plvSelect={this.state.plvSelection} actionFilter={"DASHBOARD_FILTER"} cancelPLV={this.cancelPLV} />
+                                        } */
+            } {
+                /* {this.state.type === 'TIME_FILTER' &&
+                                            // <TimeFilter cancelPLV={this.cancelPLV} />
+                                        } */
+            }
 
-                    </Popovers>
-                    <ManageAccount
-                        IsOpen={this.state.IsOpenManageAccount}
-                        closeDrawer={this.handleClick.bind(this)}
-                        updateUser={this.updateUser.bind(this)}
-                    />
-                    <ConfirmationBox title={"Logout"}
-                        handleOk={this.handleLogoutOkClick.bind(this)}
-                        hangleClose={this.handleLogoutCancelClick.bind(this)}
-                        okButton={"Logout"}
-                        cancelButton={"Cancel"}
-                        IsOpen={this.state.displayLogoutConfirmBox}>
-                        <p>Are you sure Want to Logout? </p>
-                    </ConfirmationBox>
-                </Toolbar>
-            </AppBar>
+            <
+            /Popovers> <
+            ManageAccount IsOpen = {
+                this.state.IsOpenManageAccount
+            }
+            closeDrawer = {
+                this.handleClick.bind(this)
+            }
+            updateUser = {
+                this.updateUser.bind(this)
+            }
+            /> <
+            ConfirmationBox title = {
+                "Logout"
+            }
+            handleOk = {
+                this.handleLogoutOkClick.bind(this)
+            }
+            hangleClose = {
+                this.handleLogoutCancelClick.bind(this)
+            }
+            okButton = {
+                "Logout"
+            }
+            cancelButton = {
+                "Cancel"
+            }
+            IsOpen = {
+                this.state.displayLogoutConfirmBox
+            } >
+            <
+            p > Are you sure Want to Logout ? < /p> <
+            /ConfirmationBox> <
+            /Toolbar> <
+            /AppBar>
 
         )
     }

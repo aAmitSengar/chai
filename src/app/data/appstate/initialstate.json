@@ -529,5 +529,50 @@
       "likes": 0,
       "availableQty": 10
     }
-  ]
+  ],
+  "CentersList":[
+    {
+      "id": "ahmedabad",
+      "DisplayName": "ahmedabad",
+      "Email": "test@tele.com",
+      "Mobile":"",
+      "CAM":[]
+    },
+    {
+      "id": "Bangalore-sarjapur-ext",
+      "DisplayName": "Bangalore-sarjapur-ext",
+      "Mobile":"",
+      "Email": "test@tele.com",
+      "CAM":[]
+    },
+    {
+      "id": "3",
+      "DisplayName": "Phil Dave 1",
+      "Email": "test@tele.com",
+      "Mobile":"",
+      "CAM":[]
+    },
+    {
+      "id": "4",
+      "DisplayName": "Phil Dave 2",
+      "Email": "test@tele.com",
+      "Mobile":"",
+      "CAM":[]
+    }
+  ],
+  "createCenter":{},
+  "updateCenter":{},
+  "deleteCenter":{},
+  "parentsList":[{
+      "id": "4",
+      "userName":"Preethi",     
+      "displayName": "admin KLAY",
+      "email": "preethi.nambiar@klayschools.com",
+      "mobile":"xxxxxxxxxx",
+      "status":"denied",
+      "Center":"Bangalore"
+    }],
+  "createParent":{},
+  "updateParent":{},
+  "deleteParent":{}
 }

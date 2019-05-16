@@ -18,6 +18,8 @@ import Forgot from '../components/common/forgot';
 import ResetPassword from '../components/common/ResetPassword';
 import NotFound from '../components/common/NotFound';
 // import Notify from '../components/authenticated/Notify/Notify';
+import  Parents from '../components/authenticated/Parents';
+import Centers from '../components/authenticated/Centers';
 
 
 const PrivateRoute = ({ component: Component, authenticate, ...rest }) => {
@@ -65,7 +67,9 @@ class AppRouter extends Component {
                 <Route exact={true} path="/resetPassword/:id" component={ResetPassword} />
                 <PrivateRoute path="/home" component={Home} RoleKey={"DASHBOARD"} authenticate={this.authenticateUser()}  />
                                
-                <PrivateRoute path="/user" RoleKey={"USERS"} component={User}  authenticate={this.authenticateUser()}/>            
+                <PrivateRoute path="/user" RoleKey={"USERS"} component={User}  authenticate={this.authenticateUser()}/>        
+                <PrivateRoute path="/centers" RoleKey={"USERS"} component={Centers}  authenticate={this.authenticateUser()}/>        
+                <PrivateRoute path="/parents" RoleKey={"USERS"} component={Parents}  authenticate={this.authenticateUser()}/>            
             </Switch>
         );
 

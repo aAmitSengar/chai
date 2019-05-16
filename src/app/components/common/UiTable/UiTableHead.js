@@ -14,7 +14,7 @@ class UiTableHead extends Component {
   };
 
   render() {
-    const { classes, onSelectAllClick, order, orderBy, numSelected, rowCount, columnData, needHash, needCheckBox,searchComponent } = this.props;
+    const { classes, onSelectAllClick, order, orderBy, numSelected, rowCount, columnData, needHash, needCheckBox, searchComponent } = this.props;
     return (
       <TableHead className={classes.root}>
         <TableRow>
@@ -28,16 +28,16 @@ class UiTableHead extends Component {
                   onChange={onSelectAllClick}
                 />
               </TableCell>
-              : 
+              :
               null
           }
           {
             needHash ?
-              <TableCell  style={{ width: this.props.width ? this.props.width : 'auto' }}>
+              <TableCell style={{ width: this.props.width ? this.props.width : 'auto' }}>
                 <span>#</span>
               </TableCell>
-              : 
-              <TableCell  style={{ width: this.props.width ? this.props.width : 'auto' }}>
+              :
+              <TableCell style={{ width: this.props.width ? this.props.width : 'auto' }}>
                 <span></span>
               </TableCell>
           }
@@ -47,12 +47,13 @@ class UiTableHead extends Component {
               <TableCell
                 key={column.id}
                 // numeric={column.numeric}
-                align="right"
+                align={column.numeric ? 'right' : 'left'}
                 padding={column.disablePadding ? 'none' : 'default'}
                 sortDirection={orderBy === column.id ? order : false}
                 style={{ width: this.props.width ? this.props.width : 'auto' }}
               >
                 <TableSortLabel
+                  style={{ flexDirection: "row" }}
                   active={orderBy === column.id}
                   direction={order}
                   onClick={this.createSortHandler(column.id)}
@@ -64,8 +65,8 @@ class UiTableHead extends Component {
               </TableCell>
             );
           }, this)}
-          <TableCell  style={{ width: this.props.width ? this.props.width : 'auto' , minWidth:100}}>
-           {searchComponent}
+          <TableCell style={{ width: this.props.width ? this.props.width : 'auto', minWidth: 100 }}>
+            {searchComponent}
           </TableCell>
         </TableRow>
       </TableHead>

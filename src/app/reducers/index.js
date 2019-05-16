@@ -22,7 +22,18 @@ import resetPassword from './umc/resetPassword';
 import resetPwdCheck from './umc/resetPwdCheck';
 import changePassword from './umc/changePassword';
 
-import listProducts from './product/listProducts'
+import listProducts from './product/listProducts';
+
+import createCenter from './centers/createCenter';
+import deleteCenter from './centers/deleteCenter';
+import listCenter from './centers/listCenter';
+import modifyCenter from './centers/modifyCenter';
+
+
+import createParent from './parents/createParent';
+import deleteParent from './parents/deleteParent';
+import listParent from './parents/listParent';
+import modifyParent from './parents/modifyParent';
 
 
 
@@ -51,6 +62,17 @@ export default {
     resetPwdCheck: resetPwdCheck,
     changePassword: changePassword,
 
-    productList: listProducts
+    productList: listProducts,
+
+
+    createCenter: createCenter,
+    deleteCenter: deleteCenter,
+    CentersList: listCenter,
+    updateCenter: modifyCenter,
+
+    createParent: createParent,
+    deleteParent: deleteParent,
+    parentsList: listParent,
+    updateParent: modifyParent
 
 };

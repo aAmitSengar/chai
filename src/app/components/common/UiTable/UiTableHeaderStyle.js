@@ -4,7 +4,12 @@ const toolbarStyles = theme => ({
     root: {
         backgroundColor: variables.headerGrey,
         '& thead': {
-            width: '100%'
+            width: '100%',
+            '& tr':{
+                '& th':{
+                    textAlign: 'left'
+                }
+            }
         },
         '& tr': {
             '& th': {
